@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Typing Practice</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Code Typing Practice</h1>
+        <p>Improve your coding speed and accuracy</p>
+      </div>
+
+      <div class="difficulty-selector">
+        <button class="difficulty-btn active" data-difficulty="beginner">
+          Beginner
+        </button>
+        <button class="difficulty-btn" data-difficulty="intermediate">
+          Intermediate
+        </button>
+        <button class="difficulty-btn" data-difficulty="advanced">
+          Advanced
+        </button>
+      </div>
+
+      <div class="typing-test">
+        <div class="prompt-display" id="promptDisplay"></div>
+        <div class="code-display" id="codeDisplay"></div>
+        <textarea
+          class="typing-input"
+          id="typingInput"
+          autocomplete="off"
+          autofocus
+          placeholder="Start typing the code..."
+        ></textarea>
+
+        <div class="stats">
+          <div class="stat">
+            <div id="wpm">0</div>
+            <div>CPM</div>
+          </div>
+          <div class="stat">
+            <div id="accuracy">100%</div>
+            <div>Accuracy</div>
+          </div>
+          <div class="stat">
+            <div id="timer">60</div>
+            <div>Seconds</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="restartBtn">Restart</button>
+        <button id="nextPromptBtn">Next Prompt</button>
+      </div>
+    </div>
+  </body>
+</html>

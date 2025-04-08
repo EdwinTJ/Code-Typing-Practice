@@ -1,0 +1,171 @@
+body {
+  font-family: "Courier New", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-color: #2c2e31;
+  color: #e2b714;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.typing-test {
+  background-color: #232427;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.prompt-display {
+  background-color: #3a3c42;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.code-display {
+  font-family: "Courier New", monospace;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  white-space: pre;
+  overflow-x: auto;
+  min-height: 150px;
+  user-select: none;
+}
+
+.code-line {
+  width: 100%;
+  min-height: 1.6em;
+}
+
+.char {
+  position: relative;
+  display: inline;
+}
+
+.char.correct {
+  color: #79b958;
+}
+
+.char.incorrect {
+  color: #e84545;
+  text-decoration: underline;
+}
+
+.typing-input {
+  width: 100%;
+  background-color: #3a3c42;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-family: "Courier New", monospace;
+  color: #e2b714;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  white-space: pre;
+  resize: none;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #e2b714;
+  color: #232427;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #c19b11;
+}
+
+.difficulty-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.difficulty-btn {
+  background-color: #3a3c42;
+  color: #e2b714;
+  border: 2px solid #e2b714;
+}
+
+.difficulty-btn.active {
+  background-color: #e2b714;
+  color: #232427;
+}
+
+/* Syntax highlighting */
+.keyword {
+  color: #569cd6;
+}
+.string {
+  color: #ce9178;
+}
+.number {
+  color: #b5cea8;
+}
+.function {
+  color: #dcdcaa;
+}
+.comment {
+  color: #6a9955;
+}
+.operator {
+  color: #d4d4d4;
+}
+.punctuation {
+  color: #d4d4d4;
+}
+.variable {
+  color: #9cdcfe;
+}
+
+/* Fix line break display */
+.line-break {
+  opacity: 0.5;
+  display: inline-block;
+  margin-left: 5px;
+}
